@@ -4,7 +4,7 @@
 #' @param basedir - the root directory where the data should be stored
 #' @return TRUE if finished correctly
 #' @export
-downloadMirWalkDataBySpecies = function( species="mmu", basedir="/home/simon/dbsOfflineUse/MirWalk2.0Resources"){
+downloadMirWalkDataBySpecies = function( species="mmu", basedir="/tmp/MirWalk2.0Resources"){
   
   if(species %in% c("mmu","hsa")){
     downloadPredictedTargets_mirwalk(species=species, basedir=basedir)
